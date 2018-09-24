@@ -1,5 +1,9 @@
 /*Basic CSS: Create  a custom CSS variable*/
 
+*{
+  box-sizing: border-box;
+}
+
 .penguin {
 
   /* add code below */

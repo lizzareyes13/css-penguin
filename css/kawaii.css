@@ -3,14 +3,12 @@
 .penguin {
 
   /* add code below */
-   /* created variable in root element*/
-   --penguin-skin: pink;
-   /*created a variable called penguin-blush*/
-   --penguin-blush: #DB7093;
-   /*created a variable called --penguin-eyes*/
-   --penguin-eyes: #b266ff;
-
-  /* created variable called --penguin-skin in root element -- .penguin*/
+   /* created variable called --penguin-skin in root element -- .penguin*/
+  --penguin-skin: pink;
+  /*created a variable called penguin-blush*/
+  --penguin-blush: rgb(219,112,147);
+  /*created a variable called --penguin-eyes*/
+  --penguin-eyes: #b266ff;
   /* add code above */
   position: relative;
   margin: auto;
@@ -140,7 +138,8 @@
 .blush-right {
   top: 65%;
   left: 15%;
-  background: var(--penguin-blush, magenta);
+  /*called the penguin blush variable and gave it a fallback property of magenta, just incase the variable is not supported by a browser*/
+  background: var(--penguin-blush, pink);
   width: 15%;
   height: 10%;
   border-radius: 50%;
@@ -149,7 +148,7 @@
 .blush-left {
   top: 65%;
   left: 70%;
-  background: var(--penguin-blush, magenta);
+  background: var(--penguin-blush, pink);
   width: 15%;
   height: 10%;
   border-radius: 50%;

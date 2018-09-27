@@ -1,19 +1,24 @@
 /*Basic CSS: Create  a custom CSS variable*/
 
-*{
+* {
   box-sizing: border-box;
-}
 
-.penguin {
+  /* CSS VARIABLES */
 
   /* add code below */
-   /* created variable called --penguin-skin in root element -- .penguin*/
+  /* created variable called --penguin-skin in root element -- .penguin*/
   --penguin-skin: pink;
   /*created a variable called penguin-blush*/
   --penguin-blush: rgb(219,112,147);
   /*created a variable called --penguin-eyes*/
   --penguin-eyes: #b266ff;
   /* add code above */
+
+  /* CSS VARIABLES */
+}
+
+.penguin {
+
   position: relative;
   margin: auto;
   display: block;
@@ -26,6 +31,10 @@
 .penguin-top {
   top: 10%;
   left: 25%;
+ /*added fallback function : incase IE doesn't support my --penguin-skin, etc variables*/
+  /* fallback */
+  background: pink;
+  /* fallback */
   background: var(--penguin-skin, #C8A2C8);
   width: 50%;
   height: 45%;

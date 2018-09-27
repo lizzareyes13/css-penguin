@@ -14,10 +14,25 @@
   --penguin-blush: rgb(219,112,147);
   /*created a variable called --penguin-eyes*/
   --penguin-eyes: #b266ff;
+  /* pengin size */
+  --penguin-size: 300px;
+  /* pengin size */
   /* add code above */
 
   /* CSS VARIABLES */
 }
+
+
+/* media query to adjust size
+and color of penguin according
+to the stated size of the browser screen */
+@media (max-width: 350px) {
+  * {
+    --penguin-size: 200px;
+    --penguin-skin: var(--penguin-blush);
+  }
+}
+
 
 
 .penguin {

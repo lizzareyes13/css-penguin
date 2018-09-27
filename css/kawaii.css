@@ -96,7 +96,12 @@
 .belly {
   top: 60%;
   left: 2.5%;
-  background: white;
+  /* fallback */
+  background: rgb(255,255,224);
+  /* fallback */
+  /* calling --penguin-belly variable */
+  background: var(--penguin-belly, rgb(255,255,224) );
+  /* calling --penguin-belly variable */
   width: 95%;
   height: 100%;
   border-radius: 120% 120% 100% 100%;

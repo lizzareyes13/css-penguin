@@ -2,12 +2,14 @@
 
 * {
   box-sizing: border-box;
-  
+
   /* CSS VARIABLES */
 
   /* add code below */
   /* created variable called --penguin-skin in root element -- .penguin*/
   --penguin-skin: pink;
+  /* variable  > --penguin-belly */
+  --penguin-belly: rgb(255,255,224);
   /*created a variable called penguin-blush*/
   --penguin-blush: rgb(219,112,147);
   /*created a variable called --penguin-eyes*/
@@ -16,6 +18,7 @@
 
   /* CSS VARIABLES */
 }
+
 
 .penguin {
 

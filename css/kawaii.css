@@ -27,9 +27,9 @@
 and color of penguin according
 to the stated size of the browser screen */
 @media (max-width: 350px) {
-  * {
+  :root {
     --penguin-size: 200px;
-    --penguin-skin: var(--penguin-blush);
+    --penguin-skin: black;
   }
 }
 

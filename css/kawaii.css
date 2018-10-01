@@ -15,22 +15,12 @@
   /*created a variable called --penguin-eyes*/
   --penguin-eyes: #b266ff;
   /* pengin size */
-  --penguin-size: 300px;
+  --penguin-size: 700px;
   /* pengin size */
+  --lilac: #C8A2C8;
   /* add code above */
 
   /* CSS VARIABLES */
-}
-
-
-/* media query to adjust size
-and color of penguin according
-to the stated size of the browser screen */
-@media (max-width: 350px) {
-  :root {
-    --penguin-size: 200px;
-    --penguin-skin: black;
-  }
 }
 
 
@@ -40,9 +30,9 @@ to the stated size of the browser screen */
   position: relative;
   margin: auto;
   display: block;
-  margin-top: 5%;
-  width: 300px;
-  height: 300px;
+  margin-top: 2%;
+  width: var(--penguin-size);
+  height: var(--penguin-size);
 }
 
 /*now I'm calling the variable wherever I want the color of the penguin to change : the penguin's head(penguin-top), body(penguin-bottom), and hands (right-hand, left-hand) */
@@ -93,7 +83,7 @@ to the stated size of the browser screen */
 .right-cheek {
   top: 15%;
   left: 35%;
-  background: white;
+  background: var(--penguin-belly);
   width: 60%;
   height: 70%;
   border-radius: 70% 70% 60% 60%;
@@ -102,7 +92,7 @@ to the stated size of the browser screen */
 .left-cheek {
   top: 15%;
   left: 5%;
-  background: white;
+  background: var(--penguin-belly);
   width: 60%;
   height: 70%;
   border-radius: 70% 70% 60% 60%;
@@ -214,4 +204,36 @@ body {
 
 .penguin * {
   position: absolute;
+}
+
+
+
+/* media query to adjust size
+and color of penguin according
+to the stated size of the browser screen */
+
+/* TABLET */
+@media screen and (max-width: 800px) {
+  * {
+    --penguin-size: 500px;
+    --penguin-skin: black;
+  }
+
+  body {
+    background: var(--lilac);
+  }
+
+  .penguin {
+    margin-top: 15%;
+  }
+
+}
+
+/* PHONE */
+@media screen and (max-width: 300px) and (max-height: 446px) {
+  * {
+    --penguin-size: 250px;
+    --penguin-skin: #ffc1cc;
+  }
+
 }
